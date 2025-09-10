@@ -1,23 +1,35 @@
-# network-ping-tool
-Simple network ping tool - Python
 # 🚀 Network Ping Tool
 
-**Ping your network like a pro.**  
-A sleek, fast, and easy-to-use Python tool to check connectivity and diagnose network issues. Whether you're a sysadmin, dev, or just curious, this tool has your back.
+**Ping your network like a pro – now with multi-host support and detailed statistics!**
+
+A cross-platform Python tool to check connectivity, measure latency, and diagnose network issues. Ideal for sysadmins, developers, or anyone who wants full control over network monitoring.
+
+---
 
 ## ⚡ Features
 
-- Ping any IP address or domain in seconds  
-- Simple, clean command-line interface  
-- Lightweight and fast – no bloat, just results  
+- Ping **multiple IPs/domains** at once  
+- Display **packet loss and latency statistics**  
+- Save all results automatically to a **log file**  
+- Works on **Windows, Linux, and MacOS**  
+- Clean, user-friendly command-line interface  
+
+---
 
 ## 🛠 How to Use
 
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/briangodz/network-ping-tool.git
-   cd network-ping-tool
+1. **Clone the repository**  
+```bash
+git clone https://github.com/briangodz/network-ping-tool.git
+```
 2. **Run the Tool**
-   ```bash
-   python ping_tool.py
-Enter the IP or domain you want to test and let it do its magic. ✨
+```bash
+cd network-ping-tool
+python ping_tool.py
+```
+3. **Follow prompts:**
+- Enter IPs/domains separated by commas (e.g., `8.8.8.8, google.com`)
+- Enter number of ping packets per host (default 4)
+4. **Check results:**
+  - Results appear in terminal
+  - Full log saved in `ping_results_TIMESTAMP.txt` (example: `ping_results_20250911_003015.txt`)
